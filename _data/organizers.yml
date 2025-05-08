@@ -1,0 +1,89 @@
+
+  - name: "David Goedicke"
+    position: "Postdoc"
+    description: >
+      Specializing in experience prototyping and qualitative research to investigate human–technology interaction.
+      He has created immersive VR/XR-based simulations to explore how users interact with autonomous systems.
+    website: "https://www.davidgoedicke.com"
+
+  - name: "Stacey Li"
+    position: "Ph.D. Student"
+    description: >
+      Working on fine-grained qualitative research methods to investigate interactions,
+      identifying multimodal signals that inform the development of proactive digital assistants for task support.
+
+  - name: "Donald Degraen"
+    position: "Lecturer"
+    description: >
+      Investigates methodologies that extend visual aesthetics design with tools for haptic aesthetics.
+      Has explored perceptually-aware haptic design to enable both physical artifacts and virtual experiences.
+    website: "https://www.donalddegraen.com"
+
+  - name: "Kevin John"
+    position: "Ph.D. Student"
+    description: >
+      Developing data-driven tools and graphical interfaces for haptic designers,
+      emphasizing interactive and adaptive feedback and streamlining iteration and ideation.
+
+  - name: "Yuta Sugiura"
+    position: "Associate Professor"
+    description: >
+      Focuses on tangible user interfaces and interactive devices,
+      developing ambient intelligence that enhances human behavior and interaction.
+    website: "https://lclab.org"
+
+  - name: "Tian Min"
+    position: "Ph.D. Student"
+    description: >
+      Works on human activity recognition with wearable sensors and motion guidance,
+      exploring new interactive interfaces through innovative sensing technology.
+    website: "https://www.welkin.dev"
+
+  - name: "Hyunyoung Kim"
+    position: "Assistant Professor"
+    description: >
+      Researches digital fabrication, shape-changing interfaces, and tangible user interfaces,
+      exploring how physical and digital elements combine to help lay users fabricate novel interactive objects.
+    website: "https://www.hyunyoung.kim"
+
+  - name: "Sonya S. Kwak"
+    position: "Senior Research Scientist"
+    description: >
+      Designs human–robot interaction for social robots and robotic products,
+      with an interest in service planning via the Internet of Robotic Things.
+    website: "https://dl.acm.org/profile/81339511173"
+
+  - name: "Valkyrie Savage"
+    position: "Assistant Professor"
+    description: >
+      Focuses on tangible device design and digital fabrication,
+      creating custom input devices tailored to users’ needs and contexts through sensing technologies.
+    website: "https://valkyriesavage.com"
+
+  - name: "Tom Igoe"
+    position: "Professor"
+    description: >
+      Covers networks, environmental/social impacts of technology, and lighting design.
+      Co-founder of the Arduino platform and major contributor to open-source hardware development.
+    website: "https://tigoe.com/"
+
+  - name: "David Sirkin"
+    position: "Researcher & Lecturer"
+    description: >
+      Works on human–robot interaction, automated vehicles, and interactive object design,
+      exploring new methodologies like robotic furniture and heads-up displays.
+    website: "https://me.stanford.edu/people/david-sirkin"
+
+  - name: "Wendy Ju"
+    position: "Associate Professor"
+    description: >
+      Researches human–robot interaction and automated vehicle interfaces,
+      innovating early-stage prototyping methods to understand user responses before systems are built.
+    website: "https://www.wendyju.com"
+
+  - name: "Stefan Schneegass"
+    position: "Full Professor"
+    description: >
+      Focuses on usable security & privacy, wearable computing, cross-reality, and autonomous systems
+      within Human–Computer Interaction.
+    website: "https://www.stefan-schneegass.de"

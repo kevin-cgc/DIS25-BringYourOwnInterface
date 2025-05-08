@@ -1,0 +1,60 @@
+---
+---
+
+// Hide the Recent Posts subtitle
+.archive__subtitle {
+    display: none;
+  }
+  // Hide the horizontal rule under Recent Posts
+  .archive hr {
+    display: none;
+  }
+
+  
+@import "minimal-mistakes";
+
+
+.archive__subtitle {
+    font-size: 1.25rem; /* or whatever size you prefer */
+  }
+
+
+
+/* 1. Grid container */
+.organizers-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */ 
+    grid-gap: 2rem;
+  }
+  
+  /* 2. Individual cards */
+  .organizer-card {
+    padding: 1rem;
+    text-align: center;
+    background: var(--page-background);
+    border-radius: 0.5rem;
+  }
+  
+  /* 3. Avatar styling */
+  .organizer-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* circular image */
+    margin-bottom: 1rem;
+  }
+  
+  /* 4. Text elements */
+  .organizer-name {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  .organizer-role {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-accent);
+  }
+  .organizer-description {
+    font-size: 0.875rem;
+    color: var(--text-normal);
+  }
