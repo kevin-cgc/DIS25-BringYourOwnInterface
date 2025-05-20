@@ -1,0 +1,28 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle" style="margin-top:-0.5em">Call for Participation</h3>
+{% assign join_page = site.pages | where: "path", "_pages/join.md" | first %}
+{% if join_page %}
+    <div class="call-for-participation">
+        {{ join_page.content | markdownify }}
+    </div>
+{% endif %}
+
+<h3 class="archive__subtitle" style="margin-top: 2em; margin-bottom: -1em;">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html entries=posts type=entries_layout %}
+</div>
+
+{% include paginator.html %}
