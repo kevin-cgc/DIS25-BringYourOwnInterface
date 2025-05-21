@@ -12,4 +12,11 @@ To apply, you can either:
 
 Participants will have 5-10 minutes to present their work during the workshop. Submissions will be reviewed for relevance and contribution to the workshop goals. 
 
+| Milestone                    | Date           |
+|-----------------------------|----------------|
+| Call for Participation Released | May 18, 2025 |
+| Rolling Acceptances Begin   | May 23, 2025   |
+| Simulation Released         | May 30, 2025   |
+| Rolling Acceptances End     | June 20, 2025  |
+
 The application form will be available online at the beginning of next week.
