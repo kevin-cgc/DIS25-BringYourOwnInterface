@@ -30,5 +30,3 @@ To apply, please fill out our [interest form](https://docs.google.com/forms/d/e/
 
 
 Participants will have 5-10 minutes to present their work during the workshop. Submissions will be reviewed for relevance and contribution to the workshop goals.
-
-The application form will be available online at the beginning of next week.
