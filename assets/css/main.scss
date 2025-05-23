@@ -18,6 +18,16 @@
   font-size: 1.25rem; /* or whatever size you prefer */
 }
 
+div.sidebar > table {
+  width: 100%;
+  table-layout: fixed;
+}
+div.sidebar > table thead,
+div.sidebar > table tbody {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
 
 
 /* 1. Grid container */

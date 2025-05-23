@@ -1,28 +1,53 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
 
-<h3 class="archive__subtitle" style="margin-top:-0.5em">Call for Participation</h3>
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+
 {% assign join_page = site.pages | where: "path", "_pages/join.md" | first %}
-{% if join_page %}
-    <div class="call-for-participation">
-        {{ join_page.content | markdownify }}
+
+<div id="main" role="main">
+  {% include sidebar.html sidebar=join_page.sidebar %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
+    {% endunless %}
+
+    {{ content }}
+
+    {% if join_page %}
+    <h3 class="archive__subtitle" style="margin-top:-0.5em">Call for Participation</h3>
+        <div class="call-for-participation">
+            {{ join_page.content | markdownify }}
+        </div>
+    {% endif %}
+
+    <h3 class="archive__subtitle" style="margin-top: 2em; margin-bottom: -1em;">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    <div class="entries-{{ entries_layout }}">
+      {% include documents-collection.html entries=posts type=entries_layout %}
     </div>
-{% endif %}
 
-<h3 class="archive__subtitle" style="margin-top: 2em; margin-bottom: -1em;">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+    {% include paginator.html %}
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+  </div>
 </div>
-
-{% include paginator.html %}
